@@ -467,10 +467,11 @@ export function AdminDashboard() {
 
       {/* Navigation Tabs */}
       <div className="bg-white rounded-lg shadow-sm border border-gray-200">
-        <nav className="flex space-x-8 space-x-reverse px-6">
+        <div className="overflow-x-auto scrollbar-hide">
+          <nav className="flex space-x-4 sm:space-x-8 space-x-reverse px-4 sm:px-6 min-w-max">
           <button
             onClick={() => setActiveTab('overview')}
-            className={`py-4 px-2 border-b-2 font-medium text-sm transition-colors ${
+            className={`py-4 px-1 sm:px-2 border-b-2 font-medium text-xs sm:text-sm transition-colors whitespace-nowrap ${
               activeTab === 'overview'
                 ? 'border-primary-500 text-primary-600'
                 : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
@@ -483,7 +484,7 @@ export function AdminDashboard() {
           </button>
           <button
             onClick={() => setActiveTab('posts')}
-            className={`py-4 px-2 border-b-2 font-medium text-sm transition-colors ${
+            className={`py-4 px-1 sm:px-2 border-b-2 font-medium text-xs sm:text-sm transition-colors whitespace-nowrap ${
               activeTab === 'posts'
                 ? 'border-primary-500 text-primary-600'
                 : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
@@ -496,7 +497,7 @@ export function AdminDashboard() {
           </button>
           <button
             onClick={() => setActiveTab('comments')}
-            className={`py-4 px-2 border-b-2 font-medium text-sm transition-colors ${
+            className={`py-4 px-1 sm:px-2 border-b-2 font-medium text-xs sm:text-sm transition-colors whitespace-nowrap ${
               activeTab === 'comments'
                 ? 'border-primary-500 text-primary-600'
                 : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
@@ -509,7 +510,7 @@ export function AdminDashboard() {
           </button>
           <button
             onClick={() => setActiveTab('publications')}
-            className={`py-4 px-2 border-b-2 font-medium text-sm transition-colors ${
+            className={`py-4 px-1 sm:px-2 border-b-2 font-medium text-xs sm:text-sm transition-colors whitespace-nowrap ${
               activeTab === 'publications'
                 ? 'border-primary-500 text-primary-600'
                 : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
@@ -523,7 +524,7 @@ export function AdminDashboard() {
           {admin?.role === 'super_admin' && (
             <button
               onClick={() => setActiveTab('admins')}
-              className={`py-4 px-2 border-b-2 font-medium text-sm transition-colors ${
+              className={`py-4 px-1 sm:px-2 border-b-2 font-medium text-xs sm:text-sm transition-colors whitespace-nowrap ${
                 activeTab === 'admins'
                   ? 'border-primary-500 text-primary-600'
                   : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
@@ -535,7 +536,8 @@ export function AdminDashboard() {
               </div>
             </button>
           )}
-        </nav>
+          </nav>
+        </div>
       </div>
 
       {/* Overview Tab */}

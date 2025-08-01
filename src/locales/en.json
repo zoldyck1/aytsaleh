@@ -1,0 +1,24 @@
+{
+  "welcome": "Welcome!",
+  "language": "English",
+  "selectLanguage": "Select Language",
+  "news": {
+    "title": "News",
+    "readMore": "Read More",
+    "publishedOn": "Published on",
+    "noNews": "No news available"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "news": "News"
+  },
+  "buttons": {
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete"
+  }
+}

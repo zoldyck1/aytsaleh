@@ -6,6 +6,8 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
+VERCEL_DEPLOYMENT.md
+
 # Runtime data
 pids
 *.pid

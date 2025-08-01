@@ -79,7 +79,7 @@ export function Layout({ children }: LayoutProps) {
             <img
               src="https://res.cloudinary.com/dalpnjdav/image/upload/v1754081448/5794158569229240997_cgugli.jpg"
               alt="جمعية آفاق لتدبير مرفق الماء الصالح للشرب"
-              className="h-20 w-auto object-contain bg-transparent"
+              className="h-12 w-auto object-contain bg-transparent sm:h-20"
               style={{
                 mixBlendMode: 'darken',
                 backgroundColor: 'transparent',
@@ -97,7 +97,7 @@ export function Layout({ children }: LayoutProps) {
                 e.currentTarget.parentNode?.appendChild(fallback);
               }}
             />
-            <div className="flex flex-col">
+            <div className="hidden sm:flex flex-col">
               <span className="text-sm sm:text-base lg:text-lg font-bold text-green-600 leading-tight">
                 جمعية آفاق لتدبير مرفق الماء الصالح للشرب بآيت صالح
               </span>
